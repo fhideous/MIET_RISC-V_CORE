@@ -19,7 +19,7 @@
 
 module riscV_alu(
 
-    input      [5:0]    operator_i,
+    input      [4:0]    operator_i,
     input      [31:0]   operand_a_i,
     input      [31:0]   operand_b_i,
     output reg [31:0]   result_o,
@@ -40,12 +40,12 @@ module riscV_alu(
                 `ALU_LTU  :   begin result_o =        (operand_a_i <    operand_b_i ) ? 1 :  0  ;  flag_o   = 0         ; end
 
                 
-                `ALU_EQ   :   begin flag_o   =        (operand_a_i ==   operand_b_i ) ? 1 :  0  ;  result_o = 0         ; end
-                `ALU_NE   :   begin flag_o   =        (operand_a_i !=   operand_b_i ) ? 1 :  0  ;  result_o = 0         ; end                                    
-                `ALU_GES  :   begin flag_o   =($signed(operand_a_i)>=   operand_b_i ) ? 1 :  0  ;  result_o = 0         ; end
-                `ALU_GEU  :   begin flag_o   =        (operand_a_i >=   operand_b_i ) ? 1 :  0  ;  result_o = 0         ; end
-                `ALU_LTS_F:   begin flag_o   =($signed(operand_a_i)<    operand_b_i ) ? 1 :  0  ;  result_o = 0         ; end
-                `ALU_LTU_F:   begin flag_o   =        (operand_a_i <    operand_b_i ) ? 1 :  0  ;  result_o = 0         ; end
+                `ALU_EQ   :   begin flag_o   =        (operand_a_i ==   operand_b_i ) ? 1 :  0  ;  result_o = flag_o    ; end
+                `ALU_NE   :   begin flag_o   =        (operand_a_i !=   operand_b_i ) ? 1 :  0  ;  result_o = flag_o    ; end                                    
+                `ALU_GES  :   begin flag_o   =($signed(operand_a_i)>=   operand_b_i ) ? 1 :  0  ;  result_o = flag_o    ; end
+                `ALU_GEU  :   begin flag_o   =        (operand_a_i >=   operand_b_i ) ? 1 :  0  ;  result_o = flag_o    ; end
+                `ALU_LTS_F:   begin flag_o   =($signed(operand_a_i)<    operand_b_i ) ? 1 :  0  ;  result_o = flag_o    ; end
+                `ALU_LTU_F:   begin flag_o   =        (operand_a_i <    operand_b_i ) ? 1 :  0  ;  result_o = flag_o    ; end
             endcase
         end
     

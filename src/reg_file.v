@@ -18,7 +18,7 @@ module RF(
     );
 
 
-    reg [4:0] RAM [0:31];
+    reg [31:0] RAM [0:31];
     
     assign rd1_o = RAM[adr1_i];
     assign rd2_o = RAM[adr2_i];
@@ -28,8 +28,11 @@ module RF(
         if ( !nreset_i )
             for (i = 0; i < 32; i = i + 1)
                 RAM[i] <= 5'b0;
-        if ( we_i && adr3_i)
-            RAM[adr3_i] <= wd3_i;
+        else begin
+             if ( we_i && adr3_i)
+                RAM[adr3_i] <= wd3_i;    
+        end
+        
     end
     
 

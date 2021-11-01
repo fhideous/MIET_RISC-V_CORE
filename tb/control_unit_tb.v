@@ -4,19 +4,24 @@ module control_unit_tb();
 
     reg clk_i;
     reg nreset_i;
-    reg [15:0] switches;
-    wire[31:0] data_to_hex;
-
+    reg [15:0] sw_i;
+    wire[7:0] hex_o;
+    wire[7:0] an_o;
+    wire      dp;
+    
    localparam CLK_SEMIPERIOD = 5;
 
-    control_unit control_unit_tb
+    c_unit_demo dut
      (
-         .clk_i         (   clk_i       ),
+        .clk_i          (   clk_i       ),
         .nreset_i       (   nreset_i    ),
-        .switches       (   switches    ),
-        .data_to_hex    (   data_to_hex )
+        .sw_i           (   sw_i        ),
+        .hex_o          (   hex_o       ),
+        .dp_o           (   dp_o        ),
+        .an_o           (   an_o        )
 
      );
+     
 
   initial begin 
      clk_i = 'b0;
@@ -30,8 +35,14 @@ initial begin
     #300
     nreset_i = 1;
 
-    switches = 16'b10;
-
+    sw_i = 16'b1_1000_1110;
+    
+    #400
+    nreset_i  = 0;
+    #100
+    nreset_i  = 1;
+    
+    
 end
 
 endmodule

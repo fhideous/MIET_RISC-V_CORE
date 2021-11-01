@@ -68,15 +68,6 @@ module control_unit(
                                                     { { 16{switches[15]} }, switches } );
  
  
-    // always @( * ) begin
-    //     case ( `WS )                                            
-    //         01 : data_sourse = { { 24{instr[12]   } }, `const   } ;
-    //         // 01 : data_sourse = `const;
-    //         10 : data_sourse = { { 16{switches[16]} }, 16'b01111 } ;
-    //         11 : data_sourse = alu_res_o;                    
-    //     endcase
-    // end
-
     always @(posedge clk_i) begin
         if ( !nreset_i )
             prog_cnt <= 'b0;

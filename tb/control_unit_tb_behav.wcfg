@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="control_unit_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="control_unit_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="811833fs"></ZoomStartTime>
+      <ZoomEndTime time="1037634fs"></ZoomEndTime>
+      <Cursor1Time time="965000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="290"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/control_unit_tb/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_unit_tb/nreset_i" type="logic">
+      <obj_property name="ElementShortName">nreset_i</obj_property>
+      <obj_property name="ObjectShortName">nreset_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_unit_tb/dut/all_hexs" type="array">
+      <obj_property name="ElementShortName">all_hexs[0:7][6:0]</obj_property>
+      <obj_property name="ObjectShortName">all_hexs[0:7][6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[0]" type="array">
+         <obj_property name="ElementShortName">[0][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[1]" type="array">
+         <obj_property name="ElementShortName">[1][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[2]" type="array">
+         <obj_property name="ElementShortName">[2][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[3]" type="array">
+         <obj_property name="ElementShortName">[3][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[4]" type="array">
+         <obj_property name="ElementShortName">[4][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[5]" type="array">
+         <obj_property name="ElementShortName">[5][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[6]" type="array">
+         <obj_property name="ElementShortName">[6][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/all_hexs[7]" type="array">
+         <obj_property name="ElementShortName">[7][6:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group637" type="group">
+      <obj_property name="label">inout</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/control_unit_tb/sw_i" type="array">
+         <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/hex_o" type="array">
+         <obj_property name="ElementShortName">hex_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">hex_o[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/an_o" type="array">
+         <obj_property name="ElementShortName">an_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">an_o[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dp_o" type="logic">
+         <obj_property name="ElementShortName">dp_o</obj_property>
+         <obj_property name="ObjectShortName">dp_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/data_to_hex" type="array">
+      <obj_property name="ElementShortName">data_to_hex[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_hex[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group593" type="group">
+      <obj_property name="label">alu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/alu_inst/flag_o" type="logic">
+         <obj_property name="ElementShortName">flag_o</obj_property>
+         <obj_property name="ObjectShortName">flag_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/alu_inst/result_o" type="array">
+         <obj_property name="ElementShortName">result_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_o[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/prog_cnt" type="array">
+      <obj_property name="ElementShortName">prog_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prog_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group638" type="group">
+      <obj_property name="label">reg_file</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/rf_inst/RAM" type="array">
+         <obj_property name="ElementShortName">RAM[0:31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[0:31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/control_unit_tb/dut/control_unit_demo/rf_inst/we_i" type="logic">
+         <obj_property name="ElementShortName">we_i</obj_property>
+         <obj_property name="ObjectShortName">we_i</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

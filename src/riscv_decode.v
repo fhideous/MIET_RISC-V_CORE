@@ -81,7 +81,7 @@ module riscV_decode
                     gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;       
                     ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h0; 
                     mem_we_o      = 'h0;    mem_size_o    = `NO_OPER;  mem_req_o     =  'h0;
-                    branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        = 'h0;
+                    branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        =  'h0;
                 end
 
                 `OP_IMM_OPCODE      :   begin
@@ -106,7 +106,7 @@ module riscV_decode
                     gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;       
                     ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h1; 
                     mem_we_o      = 'h0;    mem_size_o    = `NO_OPER;  mem_req_o     =  'h0;
-                    branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        = 'h0;
+                    branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        =  'h0;
                 end
 
                 `LOAD_OPCODE        :   begin 
@@ -175,7 +175,7 @@ module riscV_decode
 
                 `LUI_OPCODE         :   begin   
                     gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;                                               
-                    ex_op_a_sel_o = 'h2;    ex_op_b_sel_o = 'h2;      alu_op_o = `ALU_ADD;
+                    ex_op_a_sel_o = 'h2;    ex_op_b_sel_o = 'h2;      alu_op_o  = `ALU_ADD;
                     mem_we_o      = 'h0;    mem_size_o    = `NO_OPER; mem_req_o = 'h0;
                     branch_o      = 'h0;    jal_o         = 'h0;      jalr_o    = 'h0;     
 

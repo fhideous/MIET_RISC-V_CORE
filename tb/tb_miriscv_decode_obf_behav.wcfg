@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_miriscv_decode_obf_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_miriscv_decode_obf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="65401fs"></ZoomEndTime>
+      <Cursor1Time time="5000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="363"></NameColumnWidth>
+      <ValueColumnWidth column_width="197"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wave_markers>
+      <marker time="12772000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i" type="array">
+      <obj_property name="ElementShortName">fetched_instr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fetched_instr_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group419" type="group">
+      <obj_property name="label">opcode</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group427" type="group">
+      <obj_property name="label">func3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/ex_op_a_sel_o" type="array">
+      <obj_property name="ElementShortName">ex_op_a_sel_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_op_a_sel_o[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/ex_op_b_sel_o" type="array">
+      <obj_property name="ElementShortName">ex_op_b_sel_o[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_op_b_sel_o[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/alu_op_o" type="array">
+      <obj_property name="ElementShortName">alu_op_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op_o[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/mem_req_o" type="logic">
+      <obj_property name="ElementShortName">mem_req_o</obj_property>
+      <obj_property name="ObjectShortName">mem_req_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/mem_we_o" type="logic">
+      <obj_property name="ElementShortName">mem_we_o</obj_property>
+      <obj_property name="ObjectShortName">mem_we_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/mem_size_o" type="array">
+      <obj_property name="ElementShortName">mem_size_o[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_size_o[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/gpr_we_a_o" type="logic">
+      <obj_property name="ElementShortName">gpr_we_a_o</obj_property>
+      <obj_property name="ObjectShortName">gpr_we_a_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/wb_src_sel_o" type="logic">
+      <obj_property name="ElementShortName">wb_src_sel_o</obj_property>
+      <obj_property name="ObjectShortName">wb_src_sel_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/illegal_instr_o" type="logic">
+      <obj_property name="ElementShortName">illegal_instr_o</obj_property>
+      <obj_property name="ObjectShortName">illegal_instr_o</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/branch_o" type="logic">
+      <obj_property name="ElementShortName">branch_o</obj_property>
+      <obj_property name="ObjectShortName">branch_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/jal_o" type="logic">
+      <obj_property name="ElementShortName">jal_o</obj_property>
+      <obj_property name="ObjectShortName">jal_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/jalr_o" type="logic">
+      <obj_property name="ElementShortName">jalr_o</obj_property>
+      <obj_property name="ObjectShortName">jalr_o</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/u4USp3dmAwue" type="array">
+      <obj_property name="ElementShortName">u4USp3dmAwue[1:0]</obj_property>
+      <obj_property name="ObjectShortName">u4USp3dmAwue[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/lxOpVUZ79oDm" type="array">
+      <obj_property name="ElementShortName">lxOpVUZ79oDm[2:0]</obj_property>
+      <obj_property name="ObjectShortName">lxOpVUZ79oDm[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/kQPPGtSqrrg0" type="array">
+      <obj_property name="ElementShortName">kQPPGtSqrrg0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">kQPPGtSqrrg0[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/nlDm4h0Cblk8" type="logic">
+      <obj_property name="ElementShortName">nlDm4h0Cblk8</obj_property>
+      <obj_property name="ObjectShortName">nlDm4h0Cblk8</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/ZGg0qECcACgK" type="logic">
+      <obj_property name="ElementShortName">ZGg0qECcACgK</obj_property>
+      <obj_property name="ObjectShortName">ZGg0qECcACgK</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/Gw0jowPNd1tq" type="array">
+      <obj_property name="ElementShortName">Gw0jowPNd1tq[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Gw0jowPNd1tq[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/ODOMod37sMRJ" type="logic">
+      <obj_property name="ElementShortName">ODOMod37sMRJ</obj_property>
+      <obj_property name="ObjectShortName">ODOMod37sMRJ</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/lgxERjfgnPX2" type="logic">
+      <obj_property name="ElementShortName">lgxERjfgnPX2</obj_property>
+      <obj_property name="ObjectShortName">lgxERjfgnPX2</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/T3nfUBQPX1Zx" type="logic">
+      <obj_property name="ElementShortName">T3nfUBQPX1Zx</obj_property>
+      <obj_property name="ObjectShortName">T3nfUBQPX1Zx</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/dw4BF7GiQnff" type="logic">
+      <obj_property name="ElementShortName">dw4BF7GiQnff</obj_property>
+      <obj_property name="ObjectShortName">dw4BF7GiQnff</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/s4fORqHpkpve" type="logic">
+      <obj_property name="ElementShortName">s4fORqHpkpve</obj_property>
+      <obj_property name="ObjectShortName">s4fORqHpkpve</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/llOr" type="array">
+      <obj_property name="ElementShortName">llOr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">llOr[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/amn5" type="array">
+      <obj_property name="ElementShortName">amn5[2:0]</obj_property>
+      <obj_property name="ObjectShortName">amn5[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/U8wR" type="array">
+      <obj_property name="ElementShortName">U8wR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">U8wR[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/avHQ" type="array">
+      <obj_property name="ElementShortName">avHQ[6:0]</obj_property>
+      <obj_property name="ObjectShortName">avHQ[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/X" type="array">
+      <obj_property name="ElementShortName">X[4:0]</obj_property>
+      <obj_property name="ObjectShortName">X[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/V" type="array">
+      <obj_property name="ElementShortName">V[9:0]</obj_property>
+      <obj_property name="ObjectShortName">V[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/XMLVHtniB4" type="array">
+      <obj_property name="ElementShortName">XMLVHtniB4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">XMLVHtniB4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/evNMTIYam" type="array">
+      <obj_property name="ElementShortName">evNMTIYam[31:0]</obj_property>
+      <obj_property name="ObjectShortName">evNMTIYam[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/na2NeG76MVkvp" type="array">
+      <obj_property name="ElementShortName">na2NeG76MVkvp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">na2NeG76MVkvp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[6]" type="logic">
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">[6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[5]" type="logic">
+      <obj_property name="ElementShortName">[5]</obj_property>
+      <obj_property name="ObjectShortName">[5]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[4]" type="logic">
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">[4]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[3]" type="logic">
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">[3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[2]" type="logic">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[1]" type="logic">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_miriscv_decode_obf/fetched_instr_i[0]" type="logic">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+   </wvobject>
+</wave_config>

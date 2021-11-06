@@ -78,10 +78,12 @@ module riscV_decode
                         3'h6 : begin if (`FUNC7 == 'h0  ) alu_op_o = `ALU_OR;  else illegal_instr_o = 1'b1; end     
                         3'h7 : begin if (`FUNC7 == 'h0  ) alu_op_o = `ALU_AND; else illegal_instr_o = 1'b1; end     
                     endcase  
-                    gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;       
-                    ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h0; 
-                    mem_we_o      = 'h0;    mem_size_o    = `NO_OPER;  mem_req_o     =  'h0;
-                    branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        =  'h0;
+                    if (!illegal_instr_o) begin
+                        gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;       
+                        ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h0; 
+                        mem_we_o      = 'h0;    mem_size_o    = `NO_OPER;  mem_req_o     =  'h0;
+                        branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        = 'h0;                        
+                    end
                 end
 
                 `OP_IMM_OPCODE      :   begin
@@ -103,10 +105,12 @@ module riscV_decode
                         3'h6 : begin  alu_op_o = `ALU_OR;      end
                         3'h7 : begin  alu_op_o = `ALU_AND;     end
                     endcase
-                    gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;       
-                    ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h1; 
-                    mem_we_o      = 'h0;    mem_size_o    = `NO_OPER;  mem_req_o     =  'h0;
-                    branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        =  'h0;
+                    if (!illegal_instr_o) begin
+                        gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;       
+                        ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h1; 
+                        mem_we_o      = 'h0;    mem_size_o    = `NO_OPER;  mem_req_o     =  'h0;
+                        branch_o      = 'h0;    jal_o         = 'h0;       jalr_o        = 'h0;
+                    end
                 end
 
                 `LOAD_OPCODE        :   begin 
@@ -119,10 +123,12 @@ module riscV_decode
                         default:
                             illegal_instr_o = 'h1;
                     endcase
-                    gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h1;       
-                    ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h1;    alu_op_o      = `ALU_ADD; 
-                    mem_we_o      = 'h0;    mem_req_o     = 'h1;
-                    branch_o      = 'h0;    jal_o         = 'h0;    jalr_o        = 'h0;
+                    if (!illegal_instr_o) begin 
+                        gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h1;       
+                        ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h1;    alu_op_o      = `ALU_ADD; 
+                        mem_we_o      = 'h0;    mem_req_o     = 'h1;
+                        branch_o      = 'h0;    jal_o         = 'h0;    jalr_o        = 'h0;
+                    end
                 end
 
                 `STORE_OPCODE       :   begin    
@@ -134,10 +140,12 @@ module riscV_decode
                             illegal_instr_o = 'h1;
 
                     endcase
-                    gpr_we_a_o    = 'h0;    wb_src_sel_o  = 'h0;       
-                    ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h3;    alu_op_o      = `ALU_ADD; 
-                    mem_we_o      = 'h1;    mem_req_o     = 'h1;
-                    branch_o      = 'h0;    jal_o         = 'h0;    jalr_o        = 'h0;
+                    if (!illegal_instr_o) begin
+                        gpr_we_a_o    = 'h0;    wb_src_sel_o  = 'h0;       
+                        ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h3;    alu_op_o      = `ALU_ADD; 
+                        mem_we_o      = 'h1;    mem_req_o     = 'h1;
+                        branch_o      = 'h0;    jal_o         = 'h0;    jalr_o        = 'h0;    
+                    end
                 end
 
                 `BRANCH_OPCODE      :   begin            
@@ -151,10 +159,12 @@ module riscV_decode
                         default : 
                             illegal_instr_o = 'h1;
                     endcase
-                    gpr_we_a_o    = 'h0;    wb_src_sel_o  = 'h0;       
-                    ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h0; 
-                    mem_we_o      = 'h0;    mem_size_o    = `NO_OPER; mem_req_o     = 'h0;
-                    branch_o      = 'h1;    jal_o         = 'h0;      jalr_o        = 'h0;
+                    if (!illegal_instr_o) begin
+                        gpr_we_a_o    = 'h0;    wb_src_sel_o  = 'h0;       
+                        ex_op_a_sel_o = 'h0;    ex_op_b_sel_o = 'h0; 
+                        mem_we_o      = 'h0;    mem_size_o    = `NO_OPER; mem_req_o     = 'h0;
+                        branch_o      = 'h1;    jal_o         = 'h0;      jalr_o        = 'h0;
+                    end
                 end
 
                 `JAL_OPCODE         :   begin                  
@@ -165,17 +175,19 @@ module riscV_decode
                 end
 
                 `JALR_OPCODE        :   begin 
-                    if ( !`FUNC3 ) begin 
-                        illegal_instr_o = 'h1; 
-                    gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;
-                    ex_op_a_sel_o = 'h1;    ex_op_b_sel_o = 'h4;      alu_op_o  = `ALU_ADD;
-                    mem_we_o      = 'h0;    mem_size_o    = `NO_OPER; mem_req_o = 'h0;
-                    branch_o      = 'h0;    jal_o         = 'h0;      jalr_o    = 'h1;     
-                end
+                    if ( `FUNC3 ) 
+                        illegal_instr_o = 'h1;
+                    else begin                    
+                        gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;
+                        ex_op_a_sel_o = 'h1;    ex_op_b_sel_o = 'h4;      alu_op_o  = `ALU_ADD;
+                        mem_we_o      = 'h0;    mem_size_o    = `NO_OPER; mem_req_o = 'h0;
+                        branch_o      = 'h0;    jal_o         = 'h0;      jalr_o    = 'h1;     
+                    end
+                end 
 
                 `LUI_OPCODE         :   begin   
                     gpr_we_a_o    = 'h1;    wb_src_sel_o  = 'h0;                                               
-                    ex_op_a_sel_o = 'h2;    ex_op_b_sel_o = 'h2;      alu_op_o  = `ALU_ADD;
+                    ex_op_a_sel_o = 'h2;    ex_op_b_sel_o = 'h2;      alu_op_o = `ALU_ADD;
                     mem_we_o      = 'h0;    mem_size_o    = `NO_OPER; mem_req_o = 'h0;
                     branch_o      = 'h0;    jal_o         = 'h0;      jalr_o    = 'h0;     
 
